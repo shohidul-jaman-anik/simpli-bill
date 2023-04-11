@@ -1,0 +1,129 @@
+
+/*--------------------------------------------------
+                Header Section 
+----------------------------------------------------*/
+
+.navContainer {
+  background-image: linear-gradient(to right, #0f1511, #15282b);
+  padding: 0px 135px !important;
+}
+
+
+
+/*--------------------------------------------------
+                Banner Section 
+----------------------------------------------------*/
+.bannerContainer {
+  background-image: linear-gradient(to right, #0f1511, #15282b);
+  padding: 0px 135px;
+}
+.BannerHeading {
+  font-family: Gilroy;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 70px-;
+}
+.bannerContent{
+    Font-family: Gilroy;
+Font-style: Regular;
+Font-size: 24px;
+Line-height: 32px;
+}
+.primaryBtn{
+    background-color:  #0DC8DE;
+    color: white;
+    Font-style: Semibold;
+Font-size: 20px;
+Line-height: 32px;
+padding: 14px 40px;
+border-radius: 56px;
+margin-top: 2rem;
+}
+
+/*--------------------------------------------------
+                Services Section 
+----------------------------------------------------*/
+
+
+.servicesSection {
+  background-color: #107e4c;
+  /* color: white; */
+}
+.servicesCard{
+    background: rgba( 255, 255, 255, 0.2 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.servicesHeading{
+    Font-family: Gilroy;
+Font-style: Bold;
+Font-size: 48px;
+Line-height: 56px;
+color: white;
+}
+.servicesSubHeading{
+    Font-family: Gilroy;
+Font-style: Bold;
+Font-size: 18px;
+Line-height: 24px;
+color: white;
+}
+.BillList{
+    Font-family: Gilroy;
+    Font-style: Medium;
+    Font-size: 20px;
+    Line-height: 32px;
+    margin-left: 10px;
+}
+
+
+/*--------------------------------------------------
+                About Section 
+----------------------------------------------------*/
+.aboutHeading{
+    Font-family: Gilroy;
+Font-style: Bold;
+Font-size: 48px;
+Line-height: 56px;
+}
+
+.aboutContent{
+    Font-family: Gilroy;
+Font-style: Regular;
+Font-size: 18px;
+Line-height: 28px;
+}
+
+
+
+.talkContainer{
+    background-color: #107E4C;
+    padding: 0px 135px;
+}
+
+
+
+
+
+/* Simple Bill */
+.billBannerImg {
+  width: 570px !important;
+  height: 690px !important;
+}
+.billHeading {
+  color: #0f1511;
+  font-family: Gilroy;
+  font-style: Bold;
+  font-size: 48px;
+  line-height: 56px;
+}
+.billSubContent {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 5% 0%;
+  color: #333333;
+}
