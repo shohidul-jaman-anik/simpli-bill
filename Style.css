@@ -1,3 +1,8 @@
+/* body{
+  font-family: 'Poppins', sans-serif !important;
+ 
+} */
+
 /*--------------------------------------------------
                 Header Section 
 ----------------------------------------------------*/
@@ -16,13 +21,13 @@
 }
 .BannerHeading {
   font-family: Gilroy;
-  font-style: Bold;
+  font-weight: 700;
   font-size: 64px;
   line-height: 70px-;
 }
 .bannerContent {
   font-family: Gilroy;
-  font-style: Regular;
+  font-weight: 400;
   font-size: 24px;
   line-height: 32px;
 }
@@ -80,14 +85,14 @@
 ----------------------------------------------------*/
 .aboutHeading {
   font-family: Gilroy;
-  font-style: Bold;
+  font-weight: 700;
   font-size: 48px;
   line-height: 56px;
 }
 
 .aboutContent {
   font-family: Gilroy;
-  font-style: Regular;
+  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
 }
