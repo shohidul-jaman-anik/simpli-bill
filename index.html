@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth ">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,57 +11,66 @@
   <meta name="keywords" content="keywords,here" />
 
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
 
-  <!-- Google Fonts -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> -->
 
-<!-- Custom Fonts -->
-<link rel="stylesheet" href="/font/stylesheet.css">
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="/font/stylesheet.css">
 
+  <!-- Web flow -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Daisi Ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
 
   <!-- Css -->
-  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="CSS/Style.css" />
+
 </head>
 
 <body class=" leading-normal tracking-normal">
   <!--Nav-->
-  <nav class="navContainer p-2 mt-0 w-full">
-    <!-- Add this to make the nav fixed: "fixed z-10 top-0" -->
-    <div class="container mx-auto flex flex-wrap items-center">
-      <div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
-        <a class="text-white no-underline hover:text-white hover:no-underline" href="#">
-          <img src="./Asset/simplibill 1.png" alt="" />
-        </a>
+
+  <div class="flex justify-between items-center  navContainer ">
+    <div class=" navbar">
+      <div class="logo">
+        <img src="./Asset/simplibill 1.png" alt="" />
       </div>
-      <div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
-        <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
-          <li class="mr-3">
-            <a class="inline-block py-2 px-4 text-white no-underline" href="#">Home</a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-              href="#">Services</a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-              href="#">Features</a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-              href="#">About Us</a>
-          </li>
-        </ul>
+      <div>
+        <div class="dropdown dropdown-end flex  !ml-auto">
+          <label tabindex="0" class="btn btn-ghost lg:hidden ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white " fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-14 p-2 shadow bg-base-100 rounded-box w-52 ">
+            <li><a href="#banner" class="active:bg-white navLink">Home</a></li>
+            <li><a href="#services" class="active:bg-white navLink">Services</a></li>
+            <li><a href="#features" class="active:bg-white navLink">Features</a></li>
+            <li><a href="#about" class="active:bg-white navLink">About Us</a></li>
+            <li><a href="#about" class="active:bg-white navLink loginBtn">Login</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </nav>
+
+    <div class="navContent navbar-end hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 text-white">
+        <li><a href="#banner" class="active:bg-black navLink">Home</a></li>
+        <li><a href="#services" class="active:bg-black navLink">Services</a></li>
+        <li><a href="#features" class="active:bg-black navLink">Features</a></li>
+        <li><a href="#about" class="active:bg-black navLink">About Us</a></li>
+        <li><a href="#about" class="active:bg-black navLink loginBtn">Login</a></li>
+      </ul>
+    </div>
+
+  </div>
+
 
   <!----------- Banner ------------->
-  <div class="bannerContainer text-white mx-auto flex  flex-col md:flex-row  items-center">
+  <div id="banner" class="bannerContainer">
     <!--Left Col-->
-    <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6">
+    <div class="text-white">
       <h1 class="BannerHeading">Simplibill RCM & Technology.</h1>
       <p class="bannerContent leading-normal">
         We specialize in providing comprehensive solutions to healthcare
@@ -73,21 +82,22 @@
       </button>
     </div>
     <!--Right Col-->
-    <div class="w-full lg:w-1/2 lg:py-6 text-center bannerImg">
-      <!--Add your product image here-->
-      <img src="./Asset/Group 38.png" alt="" />
+    <div class=" bannerImg">
+      <img src="./Asset/Group 8.png" alt="" />
+      <img src="./Asset/Frame 17.png" class="upFramer" alt="" />
+      <img src="./Asset/Frame 31.png" class="downFramer" alt="" />
     </div>
   </div>
 
 
   <!-- About Us -->
-  <div class="container text-black mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
-    <div class="w-full lg:w-1/2 lg:py-6 text-center">
+  <div id="about" class="aboutContainer ">
+    <div class=" ">
       <!--Add your product image here-->
-      <img src="./Asset/Group 34.png" alt="" />
+      <img src="./Asset/Group 34.png" class="aboutImg" alt="" />
     </div>
     <!--Left Col-->
-    <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6">
+    <div class="aboutContentContainer ">
 
       <h1 class="aboutHeading">About Us</h1>
       <p class="aboutContent leading-normal my-8">
@@ -102,7 +112,7 @@
         healthcare organizations face, and we offer customized solutions, tailored to meet the unique needs of each
         client.
       </p>
-      <button class="primaryBtn">
+      <button class="aboutBtn">
         Learn More
       </button>
     </div>
@@ -112,114 +122,105 @@
 
 
 
-
-
-
-
   <!-- Services Section Start -->
 
-  <section class="servicesSection pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
-    <div class="container mx-auto">
-      <div class="-mx-4 flex flex-wrap ">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-            <h2 class="servicesHeading">
-              Services Offered
-            </h2>
-            <p class="servicesSubHeading">
-              As an innovative revenue cycle management and technology
-              company, Simplibill offers a range of services to healthcare
-              organizations of all sizes and specialties
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="-mx-4 flex flex-wrap">
-        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-          <div class="servicesCard mb-8 rounded-[20px] text-white p-10  md:px-7 xl:px-10">
-            <div class="bg-primary mb-8 flex h-[70px] w-[70px] items-center justify-start rounded-2xl">
+  <div id="services" class="servicesMainHeading servicesSection">
 
-              <img src="./Asset/Group.png">
-            </div>
-            <h4 class="text-dark mb-3 text-2xl font-semibold">
-              Revenue Cycle Management (RCM)
-            </h4>
-            <p class="text-body-color">
-              We handle billing, coding, claims, denials, collections, and
-              reporting to maximize revenue and improve cash flow. Our
-              solutions reduce administrative burdens and compliance risks.
-            </p>
-          </div>
-        </div>
-        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-          <div class="servicesCard mb-8 rounded-[20px] text-white p-10  md:px-7 xl:px-10">
-            <div class="bg-primary mb-8 flex h-[70px] w-[70px] items-center justify-start rounded-2xl">
-              <!--  -->
-              <img src="./Asset/Group 42.png">
-            </div>
-            <h4 class="text-dark mb-3 text-2xl font-semibold">
-              Healthcare Consulting
-            </h4>
-            <p class="text-body-color">
-              We provide healthcare consulting services to improve processes,
-              revenue, compliance, and technology. Our experienced consultants
-              implement customized plans based on industry standards.
-            </p>
-          </div>
-        </div>
-        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-          <div class="servicesCard mb-8 rounded-[20px] text-white p-10  md:px-7 xl:px-10">
-            <div class="bg-primary mb-8 flex h-[70px] w-[70px] items-center justify-start rounded-2xl">
-              <img src="./Asset/Group 43.png">
-            </div>
-            <h4 class="text-dark mb-3 text-2xl font-semibold">
-              Technology Solutions
-            </h4>
-            <p class="text-body-color">
-              We provide technology solutions to improve revenue cycle
-              performance and streamline operations. Our solutions enhance
-              accuracy, efficiency, compliance, and the patient experience
-              while reducing costs.
-            </p>
-          </div>
-        </div>
-        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-          <div class="servicesCard mb-8 rounded-[20px] text-white p-10  md:px-7 xl:px-10">
-            <div class="bg-primary mb-8 flex h-[70px] w-[70px] items-center justify-start rounded-2xl">
-              <img src="./Asset/Group 41.png">
-            </div>
-            <h4 class="text-dark mb-3 text-2xl font-semibold">
-              Outsourcing Services
-            </h4>
-            <p class="text-body-color">
-              We provide scalable and cost-effective outsourcing services for
-              coding, billing, and patient collections. Our services allow you
-              to focus on core competencies while we handle day-to-day
-              operations.
-            </p>
-          </div>
-        </div>
-        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-          <div class="servicesCard mb-8 rounded-[20px] text-white p-10  md:px-7 xl:px-10">
-            <div class="bg-primary mb-8 flex h-[70px] w-[70px] items-center justify-start rounded-2xl">
-              <img src="./Asset/Group 44.png">
-            </div>
-            <h4 class="text-dark mb-3 text-2xl font-semibold">
-              Training and Education
-            </h4>
-            <p class="text-body-color">
-              We offer healthcare training and education programs for coding,
-              billing, compliance, and technology. Our programs promote
-              continuous learning and development to improve skills,
-              knowledge, and confidence.
-            </p>
-          </div>
-        </div>
+    <div class="text-center">
+      <h2 class="servicesHeading">
+        Services Offered
+      </h2>
+      <p class="servicesSubHeading">
+        As an innovative revenue cycle management and technology
+        company, Simplibill offers a range <br />of services to healthcare
+        organizations of all sizes and specialties
+      </p>
+    </div>
 
+    <div class="servicesCardContainer mx-auto ">
+
+      <div class="servicesCard">
+        <div class="">
+          <img src="./Asset/Group 53.svg">
+        </div>
+        <h4 class="">
+          Revenue Cycle Management (RCM)
+        </h4>
+        <p class="">
+          We handle billing, coding, claims, denials, collections, and
+          reporting to maximize revenue and improve cash flow. Our
+          solutions reduce administrative burdens and compliance risks.
+        </p>
       </div>
+
+
+      <div class="servicesCard">
+        <div class="">
+          <img src="./Asset/Group 55.svg">
+        </div>
+        <h4 class="">
+          Healthcare Consulting
+        </h4>
+        <p class="">
+          We provide healthcare consulting services to improve processes,
+          revenue, compliance, and technology. Our experienced consultants
+          implement customized plans based on industry standards.
+        </p>
+      </div>
+
+
+      <div class="servicesCard">
+        <div class="">
+          <img src="./Asset/Group 56.svg">
+        </div>
+        <h4 class="">
+          Technology Solutions
+        </h4>
+        <p class="">
+          We provide technology solutions to improve revenue cycle
+          performance and streamline operations. Our solutions enhance
+          accuracy, efficiency, compliance, and the patient experience
+          while reducing costs.
+        </p>
+      </div>
+
+      <div class="servicesCard">
+        <div class="">
+          <img src="./Asset/Group 57.svg">
+        </div>
+        <h4 class="">
+          Outsourcing Services
+        </h4>
+        <p class="">
+          We provide scalable and cost-effective outsourcing services for
+          coding, billing, and patient collections. Our services allow you
+          to focus on core competencies while we handle day-to-day
+          operations.
+        </p>
+      </div>
+
+
+      <div class="servicesCard">
+        <div class="">
+          <img src="./Asset/Group 58.svg">
+        </div>
+        <h4 class="">
+          Training and Education
+        </h4>
+        <p class="">
+          We offer healthcare training and education programs for coding,
+          billing, compliance, and technology. Our programs promote
+          continuous learning and development to improve skills,
+          knowledge, and confidence.
+        </p>
+      </div>
+
     </div>
-    </div>
-  </section>
+  </div>
+
+
+
+
   <!-- ====== Services Section End -->
 
 
@@ -229,47 +230,51 @@
 
   <section class="formContainer">
     <div class="">
-      <div class="formHeading">
+      <div class="formHeading text-center">
         <h1>Simplifying revenue cycle, streamlining success.</h1>
         <p>We conduct a comprehensive analysis of your revenue cycle process and identify areas for improvement such as
+          <br />
           coding and billing errors, denials, appeals, and patient collections. We then develop customized solutions to
-          adders these issues and optimize your revenue cycle performance.</p>
+          adders <br /> these issues and optimize your revenue cycle performance.
+        </p>
       </div>
 
       <form class="mt-16">
-        <div class="inputsContainer">
-          <div>
-            <div class="inputParent">
-              <label for="email">Name *</label>
-              <input type="text" class="no-outline" id="email" placeholder="Enter your name here">
+        <div class="inputBox mx-auto">
+          <div class="inputsContainer">
+            <div>
+              <div class="inputParent">
+                <label for="name">Name *</label>
+                <input type="text" class="no-outline" id="email" placeholder="Enter your name here">
+              </div>
+              <div class="inputParent">
+                <label for="email">Organization name *</label>
+                <input type="text" class="no-outline" id="email" placeholder="Organization name ">
+              </div>
+              <div class="inputParent ">
+                <label for="phone">Phone</label>
+                <input type="text" class="no-outline" id="phone" placeholder="Enter your phone number here">
+              </div>
+              <div class="inputParent">
+                <label for="communication">Preferred method of communication *</label>
+                <input type="text" class="no-outline" id="comunication" placeholder="Enter your method">
+              </div>
             </div>
-            <div class="inputParent">
-              <label for="email">Organization name *</label>
-              <input type="text" class="no-outline" id="email" placeholder="Organization name ">
-            </div>
-            <div class="inputParent ">
-              <label for="phone">Phone</label>
-              <input type="text" class="no-outline" id="phone" placeholder="Enter your phone number here">
-            </div>
-            <div class="inputParent">
-              <p>Preferred method of communication *</p>
-              <input type="text" class="no-outline" id="email" placeholder="Enter your method">
-            </div>
-          </div>
 
 
-          <div>
-            <div class="inputParent flex">
-              <label for="email">Title *</label>
-              <input type="text" class="no-outline" id="email" placeholder="Enter Title">
-            </div>
-            <div class="inputParent">
-              <label for="email">Organization/Provider specialty *</label>
-              <input type="text" class="no-outline" id="email" placeholder="Enter your yours speciality">
-            </div>
-            <div class="inputParent">
-              <label for="email">Email *</label>
-              <input type="text" class="no-outline" id="email" placeholder="Enter your email address here">
+            <div>
+              <div class="inputParent " >
+                <label for="email">Title *</label>
+                <input type="text" class="no-outline" id="email" placeholder="Enter Title">
+              </div>
+              <div class="inputParent">
+                <label for="email">Organization/Provider specialty *</label>
+                <input type="text" class="no-outline" id="email" placeholder="Enter your yours speciality">
+              </div>
+              <div class="inputParent">
+                <label for="email">Email *</label>
+                <input type="text" class="no-outline" id="email" placeholder="Enter your email address here">
+              </div>
             </div>
           </div>
         </div>
@@ -287,70 +292,72 @@
 
 
   <!-- Simple Bill Start -->
-  <section class="text-gray-600 body-font">
-    <div class=" container px-5 py-24 mx-auto flex flex-wrap">
-      <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-        <img alt="feature" class="billBannerImg object-cover object-center h-full w-full"
-          src="./Asset/Rectangle 25.png">
+  <section id="features" class="billContainer">
+
+    <div class="billBannerImg">
+      <img alt="feature" class="" src="./Asset/Rectangle 25.png">
+    </div>
+
+
+    <div class="">
+      <h1 class="billHeading">SimpliBill App & Portal Features</h1>
+      <p class="billSubContent">Simplibill has developed a technology to help healthcare <Br /> organizations streamline
+        their revenue cycle operations. </p>
+
+      <div class="flex items-center mb-10">
+        <img src="./Asset/Vector (2).png" alt="" srcset="">
+        <h2 class="BillList">Secure, Cloud-Based Access</h2>
       </div>
-      <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-        <h1 class="billHeading">SimpliBill App & Portal Features</h1>
-        <p class="billSubContent">Simplibill has developed a technology to help healthcare organizations streamline
-          their revenue cycle operations. </p>
+      <div class="flex items-center mb-10">
+        <img src="./Asset/Vector (2).png" alt="" srcset="">
+        <h2 class="BillList">Real-Time Dashboard</h2>
+      </div>
+      <div class="flex items-center mb-10">
+        <img src="./Asset/Vector (2).png" alt="" srcset="">
+        <h2 class="BillList">Claims Management</h2>
+      </div>
+      <div class="flex items-center mb-10">
+        <img src="./Asset/Vector (2).png" alt="" srcset="">
+        <h2 class="BillList">Analytics and Reporting</h2>
+      </div>
+      <div class="flex items-center mb-10">
+        <img src="./Asset/Vector (2).png" alt="" srcset="">
+        <h2 class="BillList">Customizable Workflows</h2>
+      </div>
+      <div class="flex items-center mb-10">
+        <img src="./Asset/Vector (2).png" alt="" srcset="">
+        <h2 class="BillList">Patient Engagement</h2>
+      </div>
 
-        <div class="flex items-center mb-10">
-          <img src="./Asset/Vector (2).png" alt="" srcset="">
-          <h2 class="BillList">Secure, Cloud-Based Access</h2>
-        </div>
-        <div class="flex items-center mb-10">
-          <img src="./Asset/Vector (2).png" alt="" srcset="">
-          <h2 class="BillList">Real-Time Dashboard</h2>
-        </div>
-        <div class="flex items-center mb-10">
-          <img src="./Asset/Vector (2).png" alt="" srcset="">
-          <h2 class="BillList">Claims Management</h2>
-        </div>
-        <div class="flex items-center mb-10">
-          <img src="./Asset/Vector (2).png" alt="" srcset="">
-          <h2 class="BillList">Analytics and Reporting</h2>
-        </div>
-        <div class="flex items-center mb-10">
-          <img src="./Asset/Vector (2).png" alt="" srcset="">
-          <h2 class="BillList">Customizable Workflows</h2>
-        </div>
-        <div class="flex items-center mb-10">
-          <img src="./Asset/Vector (2).png" alt="" srcset="">
-          <h2 class="BillList">Patient Engagement</h2>
-        </div>
-
-        <div>
-          <img src="./Asset/image 9.png" alt="" class="ml-32">
-        </div>
+      <div>
+        <img src="./Asset/image 9.png" alt="" class="ml-32">
       </div>
     </div>
+
   </section>
 
 
   <!-- Talk -->
-  <div class="talkContainer text-black mx-auto flex  flex-col md:flex-row items-center ">
+  <div class="talkContainer ">
 
     <!--Left Col-->
-    <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6">
+    <div class="">
 
-      <h1 class="aboutHeading text-white ">Ready to talk?</h1>
-      <p class="aboutContent leading-normal my-8 text-white">
-        Learn how we transform the revenue cycle with solutions that streamline thepatient experience, drive operational
-        efficiency and improve financial performance.
+      <h1 class="talkHeading">Ready to talk?</h1>
+      <p class="talkContent">
+        Learn how we transform the revenue cycle with solutions that <br />
+        streamline thepatient experience, drive operational efficiency <br />
+        and improve financial performance.
       </p>
 
-      <button class="primaryBtn">
-        Learn More
+      <button class="talkBtn">
+        Contact Us
       </button>
     </div>
     <!--Right Col-->
-    <div class="w-full lg:w-1/2 lg:py-6 text-center">
+    <div class="talkImage text-center ">
       <!--Add your product image here-->
-      <img src="./Asset/Group 52.png" alt="" />
+      <img src="./Asset/Group 52.png" class="" alt="" />
     </div>
   </div>
 
@@ -362,8 +369,9 @@
 
 
   <div class="footerContainer">
-    <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-      <div class="flex justify-between mb-6">
+    <div class=" pt-16 ">
+      <div class="LinkContainer">
+
         <div class="footerLeftSection">
           <img src="./Asset/simplibill 1.png">
           <h1>Address</h1>
@@ -372,54 +380,59 @@
           </p>
         </div>
 
-        <div class="footerLinks">
-          <div class="links">
-            <p class="text-white">Menu</p>
-            <ul class="mt-2 space-y-2">
-              <li>
-                <a href="/" class="">Home</a>
-              </li>
-              <li>
-                <a href="/" class="">Services</a>
-              </li>
-              <li>
-                <a href="/" class="">Features</a>
-              </li>
-            </ul>
-          </div>
-          <div class="links">
-            <p class="font-medium tracking-wide text-gray-300">Company</p>
-            <ul class="mt-2 space-y-2">
-              <li>
-                <a href="/" class="">Abut us</a>
-              </li>
-              <li>
-                <a href="/" class="">Testimonial</a>
-              </li>
-              <li>
-                <a href="/" class="">Blog</a>
-              </li>
-              <li>
-                <a href="/" class="">Terms & conditions</a>
-              </li>
-            </ul>
-          </div>
-          <div class="links">
-            <!-- <p class="font-medium tracking-wide text-gray-300">Menu</p> -->
-            <img src="./Asset/linkedin-01.svg">
+        <div class="footerRightSection">
+          <div class="footerLinks">
+            <div class="links">
+              <p class="text-white">Menu</p>
+              <ul class="mt-2 space-y-2">
+                <li>
+                  <a href="/" class="">Home</a>
+                </li>
+                <li>
+                  <a href="/" class="">Services</a>
+                </li>
+                <li>
+                  <a href="/" class="">Features</a>
+                </li>
+              </ul>
+            </div>
+            <div class="links">
+              <p class="font-medium tracking-wide text-white">Company</p>
+              <ul class="mt-2 space-y-2">
+                <li>
+                  <a href="/" class="">Abut us</a>
+                </li>
+                <li>
+                  <a href="/" class="">Testimonial</a>
+                </li>
+                <li>
+                  <a href="/" class="">Blog</a>
+                </li>
+                <li>
+                  <a href="/" class="">Terms & conditions</a>
+                </li>
+              </ul>
+            </div>
+            <div class="links">
+              <!-- <p class="font-medium tracking-wide text-gray-300">Menu</p> -->
+              <img src="./Asset/linkedin-01.svg">
 
+            </div>
           </div>
 
         </div>
 
       </div>
 
-      <div class="flex flex-col justify-between pt-5 pb-10 border-t border-gray-800 sm:flex-row">
-        <p class="text-sm text-gray-500">
-          Privacy Policy
-        </p>
-        <div class="flex text-gray-500 items-center mt-4 space-x-4 sm:mt-0">
-          © 2022 Copyright Simplibill Inc.
+      <div >
+        <hr class="mt-10 mb-6" />
+        <div class="flex justify-between text-white pb-10">
+          <p class="">
+            Privacy Policy
+          </p>
+          <div class="">
+            © 2022 Copyright Simplibill Inc.
+          </div>
         </div>
       </div>
     </div>
@@ -427,9 +440,10 @@
 
 
 
-
-
-
+  <!-- Daisy Ui -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./Js/app.js"></script>
+ 
 
 </body>
 
